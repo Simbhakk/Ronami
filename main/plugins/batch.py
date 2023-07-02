@@ -36,7 +36,7 @@ ids = []
     msg = await userbot.get_messages(chat, ids=id)
     await event.client.send_message(event.chat_id, msg) 
 '''   
-@Invix.on(events.NewMessage(incoming=True, from_users=SUDO_USERS, pattern='/bulk'))
+@Invix.on(events.NewMessage(incoming=True, pattern='/bulk'))
 async def _batch(event):
     '''
     #if not event.is_private:
