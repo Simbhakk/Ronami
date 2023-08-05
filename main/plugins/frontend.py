@@ -98,6 +98,4 @@ async def clone(event):
             logging.info(e)
             await Invix.send_message(event.sender_id, f"An error occurred during cloning of `{link}`\n\n**Error:** {str(e)}")
             await edit.delete()
-        ind = user.index(f'{int(event.sender_id)}')
-        user.pop(int(ind))
-        time.sleep(1)
+          
