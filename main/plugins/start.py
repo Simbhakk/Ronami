@@ -42,13 +42,13 @@ async def remt(event):
   
 @Invix.on(events.NewMessage(incoming=True, pattern=f"{S}"))
 async def start(event):
-    text = "👋 Hi, I am Save Restricted Bot. \n For bulk downloading....Press /bulk .\nthen first video link..then no. of files like 100,150,200."
+    text = "👋 Hi, I am Save Restricted Bot. \n\n For bulk downloading in a single click.\nPress /bulk , then first video link. Then no. of files like 100,150,200."
     #await start_srb(event, text)
     await event.reply(text, 
                       buttons=[
                               [Button.inline("SET THUMB.", data="set"),
                                Button.inline("REM THUMB.", data="rem")],        
-                              [Button.url("Maintained and Modified by", url="t.me/Raj02_bots")]])                             
+                              [Button.url("Join update channel ", url="t.me/RajZ_bots")]])                             
                               
     '''
     await event.reply(text, 
